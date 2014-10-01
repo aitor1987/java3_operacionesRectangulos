@@ -1,29 +1,38 @@
 public class Rectangulo {
 
+	private double base = 0;
+	private double altura = 0;
+	private double area = 0;
+	private double peri = 0;
+	
+public void setBase(double base) 
+ {
+	this.base = base;
+ }	
+public void setAltura(double altura)
+ {
+	this.altura = altura;
+ }
 
-
-private double base;
-private double altura;
-private double perimetro;
-private double superficie;
-
-public void setMedidas(double base, double altura) 
+public double getBase() 
 {
-this.base = base;
-this.altura = altura;
-perimetro = (2*base) +(2*altura);
-superficie = base*altura;
+	return base;
 }
 
-public double getPerimetro() 
-{	
-return perimetro;
+public double getAltura() 
+{
+	return altura;
 }
 
-public double getSuperficie() 
-{	
-return superficie;
+public double Area() 
+{
+	area = getBase()*getAltura();
+	return area;
 }
 
+public double Peri() 
+{
+	peri = 2*getBase()+2*getAltura();
+	return peri;
 }
-
+}
